@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ETOZHEZAZA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('etozhezaza.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 30px 20px;
+      max-width: 800px;
+      width: 100%;
+      margin-top: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 16px;
+      margin: 0 auto 30px;
+      display: block;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    header {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    a.button {
+      display: block;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #662d91, #000000);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    a.button:hover {
+      background: white;
+      color: #000;
+      transform: scale(1.03);
+    }
+
+    .video-section {
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .subscribe {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 2rem;
+      }
+
+      iframe {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Логотип -->
+  <img src="photo_2025-07-19_22-57-26.jpg" alt="ETOZHEZAZA Logo" class="logo" />
+
+  <div class="container">
+
+    <!-- Ник -->
+    <header>ETOZHEZAZA</header>
+
+    <!-- Ссылки -->
+    <nav>
+      <a class="button" href="https://www.twitch.tv/etozhezaza" target="_blank">TWITCH</a>
+      <a class="button" href="https://t.me/etozhezaza" target="_blank">TELEGRAM</a>
+      <a class="button" href="https://www.instagram.com/etozhezaza" target="_blank">INSTAGRAM</a>
+      <a class="button" href="https://www.tiktok.com/@etozhezaza" target="_blank">TIK-TOK</a>
+      <a class="button" href="https://www.youtube.com/@etozhezaza" target="_blank">YOUTUBE</a>
+      <a class="button" href="https://www.donationalerts.com/r/etozhezaza" target="_blank">ДОНАТ</a>
+      <a class="button" href="#twitch-player">🔴 Смотреть стрим</a>
+    </nav>
+
+    <!-- Видео и чат -->
+    <div class="video-section" id="twitch-player">
+      <!-- Twitch стрим -->
+      <iframe
+        src="https://player.twitch.tv/?channel=etozhezaza&parent=etozhezaza.github.io"
+        allowfullscreen>
+      </iframe>
+
+      <!-- Twitch чат -->
+      <iframe
+        src="https://www.twitch.tv/embed/etozhezaza/chat?parent=etozhezaza.github.io"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Подписка -->
+    <div class="subscribe">
+      👇 Подписывайся на <a class="button" href="https://t.me/etozhezaza" target="_blank">Telegram</a> — чтобы не пропустить кружочки!
+    </div>
+
+  </div>
+
+</body>
+</html>
